@@ -1,3 +1,20 @@
+/* Random stylings */
+* {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: #e4dddd;
+    color: white;
+}
+
 /* Flip Card animation */
 
 .card-container {
@@ -25,44 +42,6 @@
 .back {
     -webkit-transform: rotateY( 180deg );
             transform: rotateY( 180deg );
-}
-
-/* Card design */
-
-.card {
-  width: 40em;
-  height: 33em;
-  margin: auto;
-  margin-top: 5em;
-  background-color: rgb(240, 168, 234);
-  padding: 1em;
-  text-align: center;
-  border-style: solid;
-  border-color: white;
-  border-width: 1em;
-}
-
-.front, .back {
-  box-shadow: "";
-  position: absolute;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-}
-
-* {
-    box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-a {
-    color: white;
-    text-align: center;
-}
-
-body {
-    background-color: #e4dddd;
-    color: white;
 }
 
 /* Images responsive and lay-out */
@@ -102,3 +81,77 @@ body {
        max-width: 100%;
     }
 }
+
+
+
+
+/* Card design MOBILE*/
+/* Card met animation, logo */
+.card {
+  height: 25em;
+  background-color: rgb(240, 168, 234);
+  text-align: center;
+}
+
+.front, .back {
+  box-shadow: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+/* Info mezelf*/
+.me {
+  height: 20em;
+  margin-top: -1em;
+  background-color: rgb(240, 168, 234);
+  text-align: center;
+}
+
+/* Contacten card */
+.contact {
+    height: 5em;
+    margin-top: -2em;
+    background-color: rgb(240, 168, 234);
+    text-align: center;
+  }
+
+
+
+/* Card design desktop window */
+/* Card met animation, logo */
+
+@media  only screen and (min-width: 992px){
+     /* Card met animation, logo */
+.card {
+    height: 20em;
+    width: 10em;
+    float: right;
+    margin-top: 1em;
+    margin: 10em;
+    background-color: rgb(240, 168, 234);
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 992px){
+    .contact {
+        height: 10em;
+        width: 3em;
+        margin-top: -2em;
+        background-color: rgb(240, 168, 234);
+        text-align: center;
+      } 
+}
+
+@media only screen and (min-width: 992px){
+    .me {
+        height: 10em;
+        width: 3em;
+        margin-top: -1em;
+        background-color: rgb(240, 168, 234);
+        text-align: center;
+      }  
+}
+
