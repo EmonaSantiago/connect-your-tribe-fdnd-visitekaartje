@@ -1,0 +1,85 @@
+
+h1{
+    color: rgb(246, 107, 131);
+}
+
+a{
+    color: rgb(243, 102, 125);
+    text-decoration: none;
+}
+
+body{
+padding: auto;
+background-image: url(https://c.tenor.com/438H6u87JfsAAAAM/sky-clouds.gif);
+}
+
+#container {
+    width: 450px;
+    height: 450px;
+    position: relative;
+    background: pink;
+    text-align: center;
+    font-family: Marker Felt, fantasy;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 90px;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 6px;
+    border-color: palegoldenrod;
+  }
+
+/*
+#vlag{
+    float: left;
+    position: relative;
+    bottom: 10;
+}
+*/
+
+img{
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 6px;
+    border-color: palegoldenrod;
+    margin-top: 1em;
+}
+
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+button{
+    border-style: solid;
+    background-color: rgb(97, 65, 238);
+    color: white;
+    border-radius: 10px;
+    border-width: 6px;
+    border-color: palegoldenrod;
+}
+
+  #animate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 300px;
+    
+  }
+
+  .infoAPI{
+      color: rgb(7, 7, 8);
+      background-color: palegoldenrod;
+      padding: 0;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 6px;
+    border-color:  rgb(97, 65, 238);
+    line-height: 1.2;
+    color: rgb(97, 65, 238);
+  }
+
+
+
+

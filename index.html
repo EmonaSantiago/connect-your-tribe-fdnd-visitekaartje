@@ -4,26 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./stylesheet.css">
     <title>Visitekaartje met bestaande API</title>
 </head>
 <body>
-    <header>EMONA SANTIAGO</header>
+    <div id ="container">
+    <h1>EMONA SANTIAGO</h1>
     
         <section class="Contacten">
             <p><a href="https://www.instagram.com/emona.s_/">instagram</a></p>
             <p><a href="https://github.com/EmonaSantiago">github</a></p>
         </section>
 
-        <section class="info">
-            <ul class="info_me">
-                <li id="nickname"></li>
-                <li id="name"></li>
-                <li id="GithubHandle"></li>
-                <li id="URL"></li>
-                <li id="BIO"></li>
-            </ul>
-        </section>
+        <p><button onclick="myMove()">Walk unicorn!</button></p> 
+
+
+  <div id ="animate">
+      <img src="https://acegif.com/wp-content/gif/unicorn-58.gif" alt="image" width="200px">
+   <!-- <img src="./assets/Schermafbeelding 2021-11-09 om 16.04.18.png" alt="image" width="150px" height="150px">-->
+  </div>
+  <section id="EMONA">
+      <ul class="infoAPI">
+            <li id="nickName"><li>
+            <li id="surName"><li>
+            <li id="githubHandle"><li>
+            <li id="bio"><li>
+            <li id="url"><li>
+            <li id="avatar"></li>
+      </ul>
+
+</section>
+<!--
+<img id="vlag" src="./assets/Schermafbeelding 2021-11-09 om 15.44.14.png" alt="image" width="100px">
+-->
+</div>
+
+
+
+
+
 <script src="./script.js"></script>
+<script>
+    function myMove() {
+      let id = null;
+      const elem = document.getElementById("animate");   
+      let pos = 0;
+      clearInterval(id);
+      id = setInterval(frame, 6);
+      function frame() {
+        if (pos == 265) {
+          clearInterval(id);
+        } else {
+          pos++; 
+          elem.style. left = pos + "px"; 
+          elem.style.right = pos + "px"; 
+        }
+      }
+    }
+    </script>
+<!--IK WIL dat hij terug toggle-->
+
+
+
+
+
 </body>
 </html>
