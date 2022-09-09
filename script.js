@@ -11,7 +11,7 @@ async function getMembers() {
        console.log(json);
        hidePreloader()
         json.data.forEach(item => {
-            if(item.memberId == 16) {
+            if(item.memberId == 20) {
                 document.querySelector("#surName").innerHTML = item.surname
                 document.querySelector("#nickName").innerHTML = item.nickname
                 document.querySelector("#githubHandle").innerHTML = item.githubHandle
